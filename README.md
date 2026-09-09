@@ -1,6 +1,28 @@
 # drama-clip · 短剧 AI 智能剪辑平台
 
-开源的短剧批量二创剪辑平台：把整部短剧自动完成 **语音识别 → 智能选段 → 批量混剪 → 字幕/花字/贴纸/转场 → 直传 TOS** 的全流程处理，并提供 Web 管理台与 Windows 客户端。
+<div align="center">
+
+**把整部短剧自动完成 语音识别 → 智能选段 → 批量混剪 → 字幕/花字/贴纸/转场 → 直传对象存储 的全流程开源平台**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-NVENC%20%E7%A1%AC%E7%BC%96-007808?logo=ffmpeg&logoColor=white)
+![Vue 3](https://img.shields.io/badge/Vue-3-4FC08D?logo=vue.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+
+</div>
+
+> [!WARNING]
+> **免责声明**：本项目仅供个人学习与技术研究。使用本项目时请确保你拥有素材的合法版权或授权，严禁将本项目用于处理未经授权的影视内容或任何侵权用途，由此产生的一切法律责任由使用者自行承担。
+
+## 为什么选择 drama-clip
+
+- **纯本地推理，零云端依赖**：ASR 采用 FunASR Sidecar 本地部署，智能选段基于本地规则引擎，不调用任何云端大模型 API，无按量计费、无数据出域
+- **GPU 硬编加速**：FFmpeg 滤镜图编排 + NVIDIA NVENC 硬编码，批量出片吞吐量远高于软编方案
+- **从素材到分发全流程闭环**：入库、转写、混剪、增强、直传对象存储一条流水线跑完，Web 管理台统一管控
+- **分布式设备集群**：Windows Agent 自动注册设备、领取任务，多机并行渲染横向扩容
+
+<!-- 建议在此处插入效果演示 GIF（建议 800px 宽，管理台任务看板或成片效果录屏） -->
 
 - 服务端 / 管理台：TypeScript + Node.js + Fastify + Vue 3
 - 剪辑引擎：FFmpeg（支持 NVIDIA NVENC 硬编）
