@@ -1,0 +1,26 @@
+{
+  "name": "@clip/clip-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "clip-agent": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "npm run build && node dist/cli.js",
+    "pack:win": "npm --prefix ../.. run pack:win"
+  },
+  "dependencies": {
+    "@clip/agent-core": "*",
+    "@clip/sdk": "*",
+    "@volcengine/tos-sdk": "^2.9.1",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

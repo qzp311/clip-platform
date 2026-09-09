@@ -1,0 +1,27 @@
+node_modules/
+dist/
+target/
+engines/
+*.log
+deploy/run/
+deploy/logs/
+deploy/.env.test
+deploy/.env.production
+**/.env.development
+**/.env.local
+.DS_Store
+__MACOSX/
+coverage/
+*.db
+apps/clip-agent/workspace/
+deploy/windows-packaging/output/
+tools/tos-auto-upload/config.json
+tools/tos-auto-upload/node_modules/
+
+# 内部痕迹与构建产物
+docs/
+skills/
+data/oss/
+__pycache__/
+*.pyc
+*.code-workspace

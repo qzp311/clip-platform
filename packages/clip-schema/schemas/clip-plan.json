@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://clip.local/schemas/clip-plan.json",
+  "title": "ClipPlan",
+  "type": "object",
+  "required": ["version", "clips", "output"],
+  "properties": {
+    "version": { "type": "string" },
+    "strategy": { "type": "string" },
+    "durationTier": { "type": "string", "enum": ["S", "M", "L", "XL"] },
+    "targetDurationSec": { "type": "number", "minimum": 1 },
+    "estimatedDurationSec": { "type": "number", "minimum": 1 },
+    "narrativeLine": { "type": "string" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "avoidReasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "clips": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["segmentId"],
+        "properties": {
+          "segmentId": { "type": "string" },
+          "throughSegmentId": { "type": "string" },
+          "reason": { "type": "string" },
+          "role": {
+            "type": "string",
+            "enum": ["hook", "context", "escalate", "cliff", "cta"]
+          },
+          "trimStartMs": { "type": "integer", "minimum": 0 },
+          "trimEndMs": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "ratio": { "type": "string" },
+        "maxDurationSec": { "type": "number" },
+        "addHead": { "type": "boolean" },
+        "addTail": { "type": "boolean" },
+        "subtitle": { "type": "boolean" }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["clips", "output"],
+        "properties": {
+          "strategy": { "type": "string" },
+          "durationTier": { "type": "string", "enum": ["S", "M", "L", "XL"] },
+          "targetDurationSec": { "type": "number" },
+          "estimatedDurationSec": { "type": "number" },
+          "narrativeLine": { "type": "string" },
+          "confidence": { "type": "number" },
+          "clips": { "type": "array" },
+          "output": { "type": "object" }
+        }
+      }
+    }
+  }
+}

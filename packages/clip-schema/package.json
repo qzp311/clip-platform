@@ -1,0 +1,20 @@
+{
+  "name": "@clip/clip-schema",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./defaults/*": "./defaults/*",
+    "./schemas/*": "./schemas/*"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/index.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

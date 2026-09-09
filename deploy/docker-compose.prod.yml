@@ -1,0 +1,45 @@
+# 生产部署: cd deploy && docker compose -f docker-compose.prod.yml up -d --build
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.api
+    image: clip-api:latest
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env.production
+    environment:
+      NODE_ENV: production
+      CLIP_ENV: production
+      PORT: 8081
+      HOST: 0.0.0.0
+      CLIP_OSS_ROOT: /data/oss
+    volumes:
+      - clip-oss:/data/oss
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: clip_platform
+      MYSQL_USER: clip_platform
+      MYSQL_PASSWORD: ${CLIP_MYSQL_PASSWORD:-clip_platform}
+    volumes:
+      - clip-mysql:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uclip_platform", "-p${CLIP_MYSQL_PASSWORD:-clip_platform}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 40s
+
+volumes:
+  clip-oss:
+  clip-mysql:

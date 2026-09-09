@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://clip.local/schemas/effective-config.json",
+  "title": "EffectiveConfig",
+  "type": "object",
+  "required": ["configVersion", "profile", "asr", "render"],
+  "properties": {
+    "configVersion": { "type": "string" },
+    "profile": { "type": "string" },
+    "asr": { "type": "object" },
+    "render": { "type": "object" },
+    "llm": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "provider": { "type": "string" },
+        "model": { "type": "string" }
+      }
+    },
+    "services": {
+      "type": "object",
+      "properties": {
+        "agentEnabled": { "type": "boolean" },
+        "taskProcessing": { "type": "boolean" },
+        "asrSidecar": { "type": "boolean" },
+        "taskQueue": { "type": "string", "enum": ["all", "mix", "replica"] },
+        "resourcePolicy": { "type": "object" }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "version": "20260805",
+  "provider": "funasr-modelscope",
+  "platform": "win-x64-4060",
+  "models": [
+    {
+      "name": "paraformer-zh",
+      "url": "/cdn/models/paraformer-zh/README.txt",
+      "sha256": "979c8a81f01a4e48c608661b92866f37ab85c66fef38cf5db490a9f319558a8c",
+      "sizeBytes": 287,
+      "note": "FunASR uses ModelScope hub at runtime; CDN entry tracks bundle version"
+    },
+    {
+      "name": "fsmn-vad",
+      "url": "/cdn/models/fsmn-vad/README.txt",
+      "sha256": "cd48aa63b22d0d8729144753fbc443c2e7ee8313d4d3bd814455fe372b7233a0",
+      "sizeBytes": 233,
+      "note": "FunASR uses ModelScope hub at runtime; CDN entry tracks bundle version"
+    },
+    {
+      "name": "ct-punc",
+      "url": "/cdn/models/ct-punc/README.txt",
+      "sha256": "1e780c3ddbac79af5ba8994a74914a6d5b611a9f948b306588accc0ced86fef3",
+      "sizeBytes": 235,
+      "note": "FunASR uses ModelScope hub at runtime; CDN entry tracks bundle version"
+    }
+  ],
+  "setup": {
+    "python": "pip install -r apps/funasr-server/python/requirements-funasr.txt",
+    "backend": "CLIP_ASR_BACKEND=funasr-gpu",
+    "modelsDir": "%LOCALAPPDATA%\\ClipAgent\\models"
+  }
+}

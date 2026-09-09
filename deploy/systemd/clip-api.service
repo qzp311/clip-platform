@@ -1,0 +1,33 @@
+[Unit]
+Description=Clip Platform API Server
+After=network.target
+# 若本机也跑 MySQL，可解开下一行
+# After=network.target mysql.service
+
+[Service]
+Type=simple
+WorkingDirectory=__CLIP_ROOT__
+Environment=NODE_ENV=production
+Environment=CLIP_ENV=production
+# 如需覆盖端口等，可在这里再加 Environment= 或 EnvironmentFile=
+# EnvironmentFile=-__CLIP_ROOT__/deploy/.env.production
+ExecStart=/usr/bin/env node __CLIP_ROOT__/apps/api-server/dist/index.js
+Restart=on-failure
+RestartSec=5
+# 崩溃无限重启但留间隔，避免打满 CPU
+StartLimitIntervalSec=60
+StartLimitBurst=10
+# 给正常关闭一点时间（关库连接等）
+TimeoutStopSec=30
+KillMode=mixed
+
+# 日志进 journald：journalctl -u clip-api -f
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=clip-api
+
+# 安全加固（单机服务够用；如挂载 OSS 目录有权限问题可先注释掉）
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

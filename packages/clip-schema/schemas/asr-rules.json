@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://clip.local/schemas/asr-rules.json",
+  "title": "AsrRules",
+  "type": "object",
+  "required": ["ruleSetId", "ruleSetVersion"],
+  "properties": {
+    "ruleSetId": { "type": "string" },
+    "ruleSetVersion": { "type": "string" },
+    "pipeline": {
+      "type": "object",
+      "properties": {
+        "enableVad": { "type": "boolean" },
+        "enablePunc": { "type": "boolean" },
+        "sentenceLevel": { "type": "boolean" }
+      }
+    },
+    "vad": {
+      "type": "object",
+      "properties": {
+        "minSpeechMs": { "type": "integer", "minimum": 0 },
+        "mergeGapMs": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "merge": {
+      "type": "object",
+      "properties": {
+        "minGapMs": { "type": "integer", "minimum": 0 },
+        "maxSentenceMs": { "type": "integer", "minimum": 0 },
+        "splitOnPunc": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "filter": {
+      "type": "object",
+      "properties": {
+        "minSegmentMs": { "type": "integer", "minimum": 0 },
+        "maxSegmentMs": { "type": "integer", "minimum": 0 },
+        "minConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "dropEmptyText": { "type": "boolean" },
+        "dropFillersOnly": { "type": "boolean" }
+      }
+    },
+    "hotwords": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string" },
+              "weight": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "type": "object",
+      "properties": {
+        "enableItn": { "type": "boolean" },
+        "trimWhitespace": { "type": "boolean" },
+        "removeFillers": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "segmentIdPrefix": { "type": "string" },
+        "maxSegments": { "type": "integer", "minimum": 1 }
+      }
+    }
+  },
+  "additionalProperties": false
+}

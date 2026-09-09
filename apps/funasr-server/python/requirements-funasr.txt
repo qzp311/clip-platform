@@ -1,0 +1,8 @@
+# FunASR GPU — Windows RTX 4060
+# 安装: pip install -r requirements-funasr.txt
+# CUDA 版 PyTorch 请按 https://pytorch.org 选择 cu121 轮子
+
+funasr>=1.1.0
+modelscope>=1.15.0
+torch>=2.1.0
+torchaudio>=2.1.0

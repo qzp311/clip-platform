@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "drama-clip",
+  "version": "0.3.0",
+  "identifier": "com.clip.agent",
+  "build": {
+    "frontendDist": "../ui"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "drama-clip · 短剧 AI 智能剪辑平台",
+        "width": 1100,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 720,
+        "resizable": true,
+        "visible": true,
+        "skipTaskbar": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$DATA/**",
+          "$LOCALDATA/**",
+          "$HOME/.clip-agent/**",
+          "$DOCUMENT/**",
+          "$DOWNLOAD/**",
+          "$DESKTOP/**",
+          "$VIDEO/**",
+          "D:/ClipOutput/**",
+          "C:/ClipAgent/**",
+          "D:/ClipAgent/**",
+          "D:/clip-platform/**"
+        ]
+      }
+    },
+    "trayIcon": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": false
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "icon": [
+      "icons/icon.png",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "engines": "engines"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "perMachine",
+        "installerHooks": "installer.nsh"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+FROM node:22-alpine AS base
+RUN corepack enable && corepack prepare pnpm@10 --activate
+WORKDIR /app
+
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml* ./
+COPY packages ./packages
+COPY apps/api-server ./apps/api-server
+COPY apps/admin-web ./apps/admin-web
+COPY skills ./skills
+
+RUN pnpm install --frozen-lockfile || pnpm install
+RUN pnpm --filter @clip/sdk build \
+ && pnpm --filter @clip/agent-core build \
+ && pnpm --filter @clip/api-server build \
+ && pnpm --filter @clip/admin-web build
+
+WORKDIR /app/apps/api-server
+ENV NODE_ENV=production
+ENV CLIP_ENV=production
+EXPOSE 8081
+CMD ["node", "dist/index.js"]

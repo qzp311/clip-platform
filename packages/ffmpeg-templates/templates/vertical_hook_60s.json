@@ -1,0 +1,26 @@
+{
+  "templateId": "vertical_hook_60s",
+  "name": "竖屏钩子 60 秒",
+  "video": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "cropMode": "center"
+  },
+  "encode": {
+    "codec": "h264_nvenc",
+    "preset": "p4",
+    "cq": 23
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "128k"
+  },
+  "post": {
+    "subtitle": true,
+    "bgmVolume": 0.25
+  },
+  "limits": {
+    "maxDurationSec": 1200
+  }
+}

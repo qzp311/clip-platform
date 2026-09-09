@@ -1,0 +1,34 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.api
+    ports:
+      - "8081:8081"
+    environment:
+      PORT: 8081
+      CLIP_MYSQL_HOST: mysql
+      CLIP_MYSQL_PORT: 3306
+      CLIP_MYSQL_USER: clip_platform
+      CLIP_MYSQL_PASSWORD: clip_platform
+      CLIP_MYSQL_DATABASE: clip_platform
+      CLIP_OSS_ROOT: /data/oss
+    volumes:
+      - clip-data:/data/oss
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: clip_platform
+      MYSQL_USER: clip_platform
+      MYSQL_PASSWORD: clip_platform
+    volumes:
+      - clip-mysql:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  clip-data:
+  clip-mysql:

@@ -1,0 +1,16 @@
+{
+  "accessKey": "AKLT...",
+  "accessSecret": "SK plaintext from console",
+  "accessSecretEncoding": "plain",
+  "bucket": "vland",
+  "endpoint": "https://tos-cn-beijing.volces.com",
+  "region": "cn-beijing",
+  "prefix": "sources/packages",
+  "watchDir": "D:\\changdudownload",
+  "intervalSec": 5,
+  "stableSec": 10,
+  "concurrency": 4,
+  "apiBaseUrl": "http://192.168.1.11:8081",
+  "asrRuleSetId": "drama-default-v1",
+  "activateAfterUpload": true
+}

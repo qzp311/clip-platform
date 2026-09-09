@@ -1,0 +1,14 @@
+{
+  "name": "@clip/clip-agent-desktop",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Tauri 2 托盘壳（Windows 构建需安装 Rust + VS Build Tools）",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "node scripts/package-engines.mjs && tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.5.0"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "configVersion": "cfg-20260605-001",
+  "profile": "windows_standard",
+  "asr": {
+    "models": {
+      "asr": "paraformer-zh",
+      "vad": "fsmn-vad",
+      "punc": "ct-punc"
+    },
+    "runtime": {
+      "device": "auto",
+      "maxSingleSegmentMs": 60000,
+      "batchSizeSec": 300
+    },
+    "rules": {}
+  },
+  "render": {
+    "encode": {
+      "codec": "h264_nvenc",
+      "preset": "p4",
+      "cq": 23,
+      "fallback": {
+        "codec": "libx264",
+        "preset": "medium",
+        "crf": 23
+      }
+    },
+    "video": {
+      "ratio": "auto",
+      "width": 1920,
+      "height": 1080,
+      "cropMode": "center"
+    },
+    "audio": {
+      "codec": "aac",
+      "bitrate": "128k"
+    },
+    "transition": {
+      "enabled": true,
+      "type": "random",
+      "durationSec": 0.5
+    },
+    "limits": {
+      "maxParallelTasks": 1,
+      "maxDurationSec": 1200,
+      "maxConcurrentRenders": 2,
+      "maxConcurrentUploads": 2,
+      "llmRenderPipeline": true,
+      "uploadAfterRender": false,
+      "localOutputDir": "D:/ClipOutput"
+    },
+    "workspaceMaxGb": 50,
+    "subtitleStyle": {
+      "enabled": true,
+      "fontName": "Microsoft YaHei",
+      "fontSize": 48,
+      "primaryColor": "&H00FFFFFF",
+      "outlineColor": "&H00000000",
+      "outlineWidth": 2,
+      "marginV": 80,
+      "alignment": "bottom"
+    },
+    "bgm": {
+      "enabled": false,
+      "volume": 0.25,
+      "fadeInSec": 1,
+      "fadeOutSec": 2,
+      "loop": true
+    },
+    "titleCards": [],
+    "disclaimer": {
+      "enabled": false,
+      "defaultLines": [
+        "热门短剧 影视效果 请勿模仿",
+        "本故事纯属虚构 请树立正确价值观",
+        "热门短剧 剧情虚构 无不良引导",
+        "热门短剧 本故事纯属虚构",
+        "剧情纯属虚构 请勿模仿",
+        "剧情演绎纯属虚构 爆款短剧 正在热播"
+      ],
+      "lines": []
+    }
+  },
+  "services": {
+    "agentEnabled": true,
+    "taskProcessing": true,
+    "asrSidecar": true,
+    "resourcePolicy": {
+      "scheduleEnabled": true,
+      "timezone": "Asia/Shanghai",
+      "workWindows": [{ "start": "09:00", "end": "20:00" }],
+      "fixedMode": "full",
+      "workMode": "throttled",
+      "offMode": "full",
+      "profiles": {
+        "full": {
+          "maxConcurrentRenders": 2,
+          "maxConcurrentUploads": 2,
+          "processPriority": "normal",
+          "ffmpegThreads": 0
+        },
+        "throttled": {
+          "maxConcurrentRenders": 1,
+          "maxConcurrentUploads": 1,
+          "processPriority": "below_normal",
+          "ffmpegThreads": 2
+        }
+      }
+    }
+  }
+}

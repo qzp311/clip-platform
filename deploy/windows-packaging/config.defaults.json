@@ -1,0 +1,6 @@
+{
+  "apiBase": "http://127.0.0.1:8081",
+  "asrBackend": "auto",
+  "productName": "drama-clip",
+  "platform": "win-x64"
+}

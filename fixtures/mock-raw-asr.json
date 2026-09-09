@@ -1,0 +1,6 @@
+[
+  { "id": "r1", "startMs": 0, "endMs": 2500, "text": "三年前的那个夜晚", "confidence": 0.94 },
+  { "id": "r2", "startMs": 2600, "endMs": 5200, "text": "你为什么要离开我？", "confidence": 0.92 },
+  { "id": "r3", "startMs": 5400, "endMs": 5600, "text": "啊", "confidence": 0.88 },
+  { "id": "r4", "startMs": 6000, "endMs": 9500, "text": "现在我回来了。", "confidence": 0.91 }
+]

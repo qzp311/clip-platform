@@ -1,0 +1,1393 @@
+{
+  "$schema": "./stickers.schema.json",
+  "version": "1.0.0",
+  "description": "贴花/花字模板清单。内部模板需确保商用授权；Fluent Emoji 精选为 MIT 许可。",
+  "categories": [
+    {
+      "id": "hook",
+      "name": "钩子/引流",
+      "tags": [
+        "hook",
+        "attention",
+        "爆款"
+      ]
+    },
+    {
+      "id": "conflict",
+      "name": "冲突",
+      "tags": [
+        "conflict",
+        "drama",
+        "打脸"
+      ]
+    },
+    {
+      "id": "twist",
+      "name": "反转",
+      "tags": [
+        "twist",
+        "震惊",
+        "反转"
+      ]
+    },
+    {
+      "id": "cliff",
+      "name": "悬念",
+      "tags": [
+        "cliff",
+        "悬念",
+        "下集"
+      ]
+    },
+    {
+      "id": "cta",
+      "name": "转化引导",
+      "tags": [
+        "cta",
+        "追剧",
+        "点这里"
+      ]
+    },
+    {
+      "id": "romance",
+      "name": "甜宠",
+      "tags": [
+        "romance",
+        "甜宠",
+        "恋爱"
+      ]
+    },
+    {
+      "id": "ancient",
+      "name": "古装",
+      "tags": [
+        "ancient",
+        "古装",
+        "宫斗"
+      ]
+    },
+    {
+      "id": "revenge",
+      "name": "逆袭",
+      "tags": [
+        "revenge",
+        "逆袭",
+        "重生"
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "hook-red-boom",
+      "name": "爆款红色爆炸贴",
+      "type": "image",
+      "file": "hook-red-boom.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "attention",
+        "爆款"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.6,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "conflict-vs",
+      "name": "冲突对决框",
+      "type": "image",
+      "file": "conflict-vs.png",
+      "categories": [
+        "conflict"
+      ],
+      "tags": [
+        "conflict",
+        "drama",
+        "打脸"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.55,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "twist-shock",
+      "name": "反转震惊贴",
+      "type": "image",
+      "file": "twist-shock.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "震惊",
+        "反转"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "cliff-next",
+      "name": "悬念下集引导",
+      "type": "image",
+      "file": "cliff-next.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "悬念",
+        "下集"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "cta-follow",
+      "name": "追剧引导贴",
+      "type": "image",
+      "file": "cta-follow.png",
+      "categories": [
+        "cta"
+      ],
+      "tags": [
+        "cta",
+        "追剧",
+        "点这里"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.4,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "title-romance-ribbon",
+      "name": "甜宠标题丝带",
+      "type": "image",
+      "file": "title-romance-ribbon.png",
+      "categories": [
+        "romance",
+        "hook"
+      ],
+      "tags": [
+        "romance",
+        "甜宠",
+        "恋爱",
+        "title"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.7,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": "${dramaTitle}",
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "title-ancient-gold",
+      "name": "古装金字标题",
+      "type": "image",
+      "file": "title-ancient-gold.png",
+      "categories": [
+        "ancient",
+        "hook"
+      ],
+      "tags": [
+        "ancient",
+        "古装",
+        "宫斗",
+        "title"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.7,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": "${dramaTitle}",
+      "license": "internal",
+      "licenseScope": "internal"
+    },
+    {
+      "id": "fluent-fire",
+      "name": "火焰",
+      "type": "image",
+      "file": "fluent-emoji/fluent-fire.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "attention",
+        "爆款",
+        "hot"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-star",
+      "name": "星星",
+      "type": "image",
+      "file": "fluent-emoji/fluent-star.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "attention",
+        "star"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-glowing-star",
+      "name": "闪耀之星",
+      "type": "image",
+      "file": "fluent-emoji/fluent-glowing-star.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "attention",
+        "sparkle"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-sparkles",
+      "name": "闪光",
+      "type": "image",
+      "file": "fluent-emoji/fluent-sparkles.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "sparkle",
+        "shine"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-money-bag",
+      "name": "钱袋",
+      "type": "image",
+      "file": "fluent-emoji/fluent-money-bag.png",
+      "categories": [
+        "hook",
+        "climax"
+      ],
+      "tags": [
+        "hook",
+        "money",
+        "wealth"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-money-with-wings",
+      "name": "长翅膀的钱",
+      "type": "image",
+      "file": "fluent-emoji/fluent-money-with-wings.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "money",
+        "rich"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-party-popper",
+      "name": "庆祝彩带",
+      "type": "image",
+      "file": "fluent-emoji/fluent-party-popper.png",
+      "categories": [
+        "hook",
+        "climax"
+      ],
+      "tags": [
+        "hook",
+        "celebrate",
+        "party"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-wrapped-gift",
+      "name": "礼物",
+      "type": "image",
+      "file": "fluent-emoji/fluent-wrapped-gift.png",
+      "categories": [
+        "hook",
+        "cta"
+      ],
+      "tags": [
+        "hook",
+        "gift",
+        "free"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-rocket",
+      "name": "火箭",
+      "type": "image",
+      "file": "fluent-emoji/fluent-rocket.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "boost",
+        "hot"
+      ],
+      "defaultPosition": "center-right",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-hundred-points",
+      "name": "满分",
+      "type": "image",
+      "file": "fluent-emoji/fluent-hundred-points.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "top",
+        "must-see"
+      ],
+      "defaultPosition": "top-left",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-warning",
+      "name": "警告",
+      "type": "image",
+      "file": "fluent-emoji/fluent-warning.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "warning",
+        "alert"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-red-exclamation",
+      "name": "红色感叹号",
+      "type": "image",
+      "file": "fluent-emoji/fluent-red-exclamation.png",
+      "categories": [
+        "hook"
+      ],
+      "tags": [
+        "hook",
+        "alert",
+        "shock"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-anger-symbol",
+      "name": "愤怒符号",
+      "type": "image",
+      "file": "fluent-emoji/fluent-anger-symbol.png",
+      "categories": [
+        "conflict"
+      ],
+      "tags": [
+        "conflict",
+        "anger",
+        "drama"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-bomb",
+      "name": "炸弹",
+      "type": "image",
+      "file": "fluent-emoji/fluent-bomb.png",
+      "categories": [
+        "conflict"
+      ],
+      "tags": [
+        "conflict",
+        "boom",
+        "drama"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-broken-heart",
+      "name": "心碎",
+      "type": "image",
+      "file": "fluent-emoji/fluent-broken-heart.png",
+      "categories": [
+        "conflict",
+        "romance"
+      ],
+      "tags": [
+        "conflict",
+        "heartbreak",
+        "sad"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-right-anger-bubble",
+      "name": "愤怒气泡",
+      "type": "image",
+      "file": "fluent-emoji/fluent-right-anger-bubble.png",
+      "categories": [
+        "conflict"
+      ],
+      "tags": [
+        "conflict",
+        "anger",
+        "dialogue"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.55,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-boxing-glove",
+      "name": "拳击手套",
+      "type": "image",
+      "file": "fluent-emoji/fluent-boxing-glove.png",
+      "categories": [
+        "conflict"
+      ],
+      "tags": [
+        "conflict",
+        "fight",
+        "drama"
+      ],
+      "defaultPosition": "center-right",
+      "defaultScale": 0.45,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-crystal-ball",
+      "name": "水晶球",
+      "type": "image",
+      "file": "fluent-emoji/fluent-crystal-ball.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "mystery",
+        "future"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-ghost",
+      "name": "幽灵",
+      "type": "image",
+      "file": "fluent-emoji/fluent-ghost.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "ghost",
+        "mystery"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-skull",
+      "name": "骷髅",
+      "type": "image",
+      "file": "fluent-emoji/fluent-skull.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "danger",
+        "shock"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-skull-crossbones",
+      "name": "骷髅交叉骨",
+      "type": "image",
+      "file": "fluent-emoji/fluent-skull-crossbones.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "danger",
+        "deadly"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-clown-face",
+      "name": "小丑",
+      "type": "image",
+      "file": "fluent-emoji/fluent-clown-face.png",
+      "categories": [
+        "twist",
+        "comedy"
+      ],
+      "tags": [
+        "twist",
+        "clown",
+        "fake"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-thinking-face",
+      "name": "思考",
+      "type": "image",
+      "file": "fluent-emoji/fluent-thinking-face.png",
+      "categories": [
+        "twist"
+      ],
+      "tags": [
+        "twist",
+        "thinking",
+        "suspense"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-red-question",
+      "name": "红色问号",
+      "type": "image",
+      "file": "fluent-emoji/fluent-red-question.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "question",
+        "suspense"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-white-question",
+      "name": "白色问号",
+      "type": "image",
+      "file": "fluent-emoji/fluent-white-question.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "question",
+        "suspense"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-exclamation-question",
+      "name": "疑问感叹",
+      "type": "image",
+      "file": "fluent-emoji/fluent-exclamation-question.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "question",
+        "shock"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-key",
+      "name": "钥匙",
+      "type": "image",
+      "file": "fluent-emoji/fluent-key.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "secret",
+        "key"
+      ],
+      "defaultPosition": "center-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-lock",
+      "name": "锁",
+      "type": "image",
+      "file": "fluent-emoji/fluent-lock.png",
+      "categories": [
+        "cliff"
+      ],
+      "tags": [
+        "cliff",
+        "secret",
+        "locked"
+      ],
+      "defaultPosition": "center-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-crown",
+      "name": "皇冠",
+      "type": "image",
+      "file": "fluent-emoji/fluent-crown.png",
+      "categories": [
+        "climax",
+        "revenge"
+      ],
+      "tags": [
+        "climax",
+        "crown",
+        "king"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-trophy",
+      "name": "奖杯",
+      "type": "image",
+      "file": "fluent-emoji/fluent-trophy.png",
+      "categories": [
+        "climax",
+        "revenge"
+      ],
+      "tags": [
+        "climax",
+        "win",
+        "trophy"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-1st-medal",
+      "name": "金牌",
+      "type": "image",
+      "file": "fluent-emoji/fluent-1st-medal.png",
+      "categories": [
+        "climax",
+        "revenge"
+      ],
+      "tags": [
+        "climax",
+        "win",
+        "top"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-gem-stone",
+      "name": "宝石",
+      "type": "image",
+      "file": "fluent-emoji/fluent-gem-stone.png",
+      "categories": [
+        "climax"
+      ],
+      "tags": [
+        "climax",
+        "gem",
+        "rich"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-military-medal",
+      "name": "军功章",
+      "type": "image",
+      "file": "fluent-emoji/fluent-military-medal.png",
+      "categories": [
+        "climax",
+        "revenge"
+      ],
+      "tags": [
+        "climax",
+        "honor",
+        "medal"
+      ],
+      "defaultPosition": "top-left",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-fireworks",
+      "name": "烟花",
+      "type": "image",
+      "file": "fluent-emoji/fluent-fireworks.png",
+      "categories": [
+        "climax"
+      ],
+      "tags": [
+        "climax",
+        "celebrate",
+        "win"
+      ],
+      "defaultPosition": "top",
+      "defaultScale": 0.6,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-red-heart",
+      "name": "红心",
+      "type": "image",
+      "file": "fluent-emoji/fluent-red-heart.png",
+      "categories": [
+        "romance"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "heart"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-two-hearts",
+      "name": "两颗心",
+      "type": "image",
+      "file": "fluent-emoji/fluent-two-hearts.png",
+      "categories": [
+        "romance"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "sweet"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-sparkling-heart",
+      "name": "闪亮的心",
+      "type": "image",
+      "file": "fluent-emoji/fluent-sparkling-heart.png",
+      "categories": [
+        "romance"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "sparkle"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-heart-on-fire",
+      "name": "心火",
+      "type": "image",
+      "file": "fluent-emoji/fluent-heart-on-fire.png",
+      "categories": [
+        "romance",
+        "hook"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "passion"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 1.5,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-heart-with-arrow",
+      "name": "丘比特之箭",
+      "type": "image",
+      "file": "fluent-emoji/fluent-heart-with-arrow.png",
+      "categories": [
+        "romance"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "arrow"
+      ],
+      "defaultPosition": "center",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-heart-eyes",
+      "name": "花痴脸",
+      "type": "image",
+      "file": "fluent-emoji/fluent-heart-eyes.png",
+      "categories": [
+        "romance",
+        "comedy"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "cute"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-face-with-hearts",
+      "name": "满脸爱心",
+      "type": "image",
+      "file": "fluent-emoji/fluent-face-with-hearts.png",
+      "categories": [
+        "romance"
+      ],
+      "tags": [
+        "romance",
+        "love",
+        "happy"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-tears-of-joy",
+      "name": "笑哭",
+      "type": "image",
+      "file": "fluent-emoji/fluent-tears-of-joy.png",
+      "categories": [
+        "comedy",
+        "hook"
+      ],
+      "tags": [
+        "comedy",
+        "laugh",
+        "funny"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-rolling-laugh",
+      "name": "笑到打滚",
+      "type": "image",
+      "file": "fluent-emoji/fluent-rolling-laugh.png",
+      "categories": [
+        "comedy"
+      ],
+      "tags": [
+        "comedy",
+        "laugh",
+        "funny"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-winking-tongue",
+      "name": "调皮眨眼",
+      "type": "image",
+      "file": "fluent-emoji/fluent-winking-tongue.png",
+      "categories": [
+        "comedy"
+      ],
+      "tags": [
+        "comedy",
+        "tease",
+        "funny"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-partying-face",
+      "name": "派对脸",
+      "type": "image",
+      "file": "fluent-emoji/fluent-partying-face.png",
+      "categories": [
+        "comedy",
+        "climax"
+      ],
+      "tags": [
+        "comedy",
+        "party",
+        "celebrate"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-crying-face",
+      "name": "哭脸",
+      "type": "image",
+      "file": "fluent-emoji/fluent-crying-face.png",
+      "categories": [
+        "comedy",
+        "romance"
+      ],
+      "tags": [
+        "comedy",
+        "cry",
+        "sad"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-loudly-crying",
+      "name": "大哭",
+      "type": "image",
+      "file": "fluent-emoji/fluent-loudly-crying.png",
+      "categories": [
+        "comedy",
+        "romance"
+      ],
+      "tags": [
+        "comedy",
+        "cry",
+        "dramatic"
+      ],
+      "defaultPosition": "bottom",
+      "defaultScale": 0.5,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-ok-hand",
+      "name": "OK手势",
+      "type": "image",
+      "file": "fluent-emoji/fluent-ok-hand.png",
+      "categories": [
+        "cta"
+      ],
+      "tags": [
+        "cta",
+        "ok",
+        "agree"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.45,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-ok-button",
+      "name": "OK按钮",
+      "type": "image",
+      "file": "fluent-emoji/fluent-ok-button.png",
+      "categories": [
+        "cta"
+      ],
+      "tags": [
+        "cta",
+        "ok",
+        "confirm"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.45,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-point-right",
+      "name": "指向右侧",
+      "type": "image",
+      "file": "fluent-emoji/fluent-point-right.png",
+      "categories": [
+        "cta"
+      ],
+      "tags": [
+        "cta",
+        "point",
+        "follow"
+      ],
+      "defaultPosition": "center-right",
+      "defaultScale": 0.45,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-eyes",
+      "name": "眼睛",
+      "type": "image",
+      "file": "fluent-emoji/fluent-eyes.png",
+      "categories": [
+        "cta",
+        "hook"
+      ],
+      "tags": [
+        "cta",
+        "watch",
+        "look"
+      ],
+      "defaultPosition": "top-right",
+      "defaultScale": 0.45,
+      "durationSec": 2,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    },
+    {
+      "id": "fluent-telephone",
+      "name": "电话",
+      "type": "image",
+      "file": "fluent-emoji/fluent-telephone.png",
+      "categories": [
+        "cta"
+      ],
+      "tags": [
+        "cta",
+        "call",
+        "contact"
+      ],
+      "defaultPosition": "bottom-right",
+      "defaultScale": 0.45,
+      "durationSec": 3,
+      "loop": true,
+      "textPlaceholder": null,
+      "license": "MIT",
+      "licenseScope": "all-platform",
+      "attribution": "Microsoft Fluent Emoji"
+    }
+  ]
+}

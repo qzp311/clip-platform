@@ -1,0 +1,108 @@
+{
+  "$schema": "./fonts.schema.json",
+  "version": "2.0.2",
+  "description": "可商用中文字体清单。字体文件请自行确保来源合法，本清单仅做推荐登记。",
+  "defaultFontFamily": "DouyinSans",
+  "defaultFallbackFamily": "Source Han Sans CN Bold",
+  "fonts": [
+    {
+      "id": "douyin-sans",
+      "name": "抖音美好体",
+      "family": "DouyinSans",
+      "license": "OFL-1.1",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://github.com/bytedance/fonts/tree/main/DouyinSans",
+      "source": "字节跳动 × 方正字库",
+      "file": "DouyinSansBold.ttf",
+      "description": "抖音官方品牌字体，OFL开源，粗黑醒目，适合标题花字"
+    },
+    {
+      "id": "alibaba-puhuiti-regular",
+      "name": "阿里巴巴普惠体 Regular",
+      "family": "Alibaba PuHuiTi 3.0 55 Regular",
+      "license": "阿里免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://fonts.alibabagroup.com/",
+      "source": "阿里巴巴",
+      "file": "AlibabaPuHuiTi-3-55-Regular.ttf",
+      "description": "阿里巴巴普惠体 3.0 常规字重，现代通用"
+    },
+    {
+      "id": "alibaba-puhuiti-bold",
+      "name": "阿里巴巴普惠体 Bold",
+      "family": "Alibaba PuHuiTi 3.0 55 Regular",
+      "license": "阿里免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://fonts.alibabagroup.com/",
+      "source": "阿里巴巴",
+      "file": "AlibabaPuHuiTi-3-85-Bold.ttf",
+      "description": "阿里巴巴普惠体 3.0 粗体，适合标题"
+    },
+    {
+      "id": "alibaba-puhuiti-heavy",
+      "name": "阿里巴巴普惠体 Heavy",
+      "family": "Alibaba PuHuiTi 3.0 115 Black",
+      "license": "阿里免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://fonts.alibabagroup.com/",
+      "source": "阿里巴巴",
+      "file": "AlibabaPuHuiTi-3-115-Black.ttf",
+      "description": "阿里巴巴普惠体 3.0 特黑，冲击力最强"
+    },
+    {
+      "id": "zcool-gaoduanhei",
+      "name": "站酷高端黑体",
+      "family": "zcool-gdh",
+      "license": "免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://www.zcool.com.cn/special/zcoolfonts/",
+      "source": "站酷",
+      "file": "zcool-gdh.ttf",
+      "description": "站酷公益字体，粗黑醒目，适合标题和钩子文案"
+    },
+    {
+      "id": "youshe-biaotihei",
+      "name": "优设标题黑",
+      "family": "YouSheBiaoTiHei",
+      "license": "免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://www.uisdc.com/uisdc-first-free-font",
+      "source": "优设网",
+      "file": "YouSheBiaoTiHei.ttf",
+      "description": "优设首款免费商用字体，倾斜黑体，力量感强"
+    },
+    {
+      "id": "pangmen-zhengdao-biaoti",
+      "name": "庞门正道标题体",
+      "family": "PangMenZhengDao",
+      "license": "免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://www.pangmen.com/",
+      "source": "庞门正道",
+      "file": "PangMenZhengDao.ttf",
+      "description": "庞门正道免费标题字体，书法风格，适合古装剧"
+    },
+    {
+      "id": "yanshi-foxiti",
+      "name": "演示佛系体",
+      "family": "Slidefu",
+      "license": "免费商用",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://www.fonts.net.cn/font-31781481408.html",
+      "source": "演示字体",
+      "file": "Slidefu.ttf",
+      "description": "手写毛笔风格，适合古风、情感短剧"
+    },
+    {
+      "id": "source-han-sans-bold",
+      "name": "思源黑体 Bold",
+      "family": "Source Han Sans CN Bold",
+      "license": "OFL-1.1",
+      "licenseScope": "all-platform",
+      "licenseUrl": "https://github.com/adobe-fonts/source-han-sans",
+      "source": "Adobe / Google",
+      "file": "SourceHanSansCN-Bold.otf",
+      "description": "思源黑体开源泛中日韩字体，OFL协议，通用性强"
+    }
+  ]
+}

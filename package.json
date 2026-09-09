@@ -1,0 +1,38 @@
+{
+  "name": "clip-platform",
+  "private": true,
+  "version": "0.3.0",
+  "description": "短剧智能剪辑平台 - monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @clip/clip-schema && npm run build -w @clip/sdk && npm run build -w @clip/agent-core && npm run build -w @clip/ffmpeg-templates && npm run build -w @clip/funasr-server && npm run build -w @clip/api-server && npm run build -w @clip/clip-agent && npm run build -w @clip/admin-web",
+    "test": "npm run test -w @clip/agent-core",
+    "setup": "npm run build && node scripts/bootstrap.mjs",
+    "demo": "node scripts/run-demo.mjs",
+    "dev:api": "CLIP_ENV=test npm run build -w @clip/sdk -w @clip/agent-core -w @clip/api-server -w @clip/admin-web && CLIP_ENV=test npm run start -w @clip/api-server",
+    "build:api": "bash deploy/scripts/clip-api.sh build",
+    "api:start": "bash deploy/scripts/clip-api.sh start",
+    "api:stop": "bash deploy/scripts/clip-api.sh stop",
+    "api:restart": "bash deploy/scripts/clip-api.sh restart",
+    "api:status": "bash deploy/scripts/clip-api.sh status",
+    "api:logs": "bash deploy/scripts/clip-api.sh logs",
+    "start:api": "bash deploy/scripts/clip-api.sh start",
+    "start:api:fg": "bash deploy/scripts/clip-api.sh start-fg",
+    "dev:funasr": "npm run start -w @clip/funasr-server -- --backend vad",
+    "dev:admin": "npm run dev -w @clip/admin-web",
+    "dev:agent": "node apps/clip-agent/dist/cli.js run --api-base http://127.0.0.1:8081",
+    "agent": "node apps/clip-agent/dist/cli.js",
+    "pack:win": "node deploy/windows-packaging/build.mjs",
+    "pack:portable": "node deploy/windows-packaging/build-portable.mjs",
+    "pack:agent-hotfix": "node scripts/publish-agent-hotfix.mjs",
+    "models:cdn": "node scripts/download-asr-models.mjs",
+    "desktop": "node scripts/build-desktop.mjs",
+    "lint": "npm run lint -ws --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

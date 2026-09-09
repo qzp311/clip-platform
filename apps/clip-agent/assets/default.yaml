@@ -1,0 +1,11 @@
+# 本地路径 / 端口 / 日志；ASR 识别规则与渲染参数由云端 effectiveConfig 下发
+apiBase: https://clip-api.yourcompany.com
+funasr:
+  host: 127.0.0.1
+  port: 17860
+paths:
+  installDir: "C:\\Program Files\\ClipAgent"
+  workspace: "%LOCALAPPDATA%\\ClipAgent\\workspace"
+  logs: "%LOCALAPPDATA%\\ClipAgent\\logs"
+logging:
+  level: info

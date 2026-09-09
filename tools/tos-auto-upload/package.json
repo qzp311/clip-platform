@@ -1,0 +1,14 @@
+{
+  "name": "tos-auto-upload",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Watch a folder and auto-upload .zip files to Volcengine TOS, then delete local files",
+  "type": "module",
+  "scripts": {
+    "start": "node watch.mjs",
+    "upload": "node upload.mjs"
+  },
+  "dependencies": {
+    "@volcengine/tos-sdk": "^2.9.1"
+  }
+}

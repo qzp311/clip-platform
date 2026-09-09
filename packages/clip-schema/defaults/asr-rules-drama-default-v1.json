@@ -1,0 +1,38 @@
+{
+  "ruleSetId": "drama-default-v1",
+  "ruleSetVersion": "1.1.0",
+  "pipeline": {
+    "enableVad": true,
+    "enablePunc": true,
+    "sentenceLevel": true
+  },
+  "vad": {
+    "minSpeechMs": 300,
+    "mergeGapMs": 1800
+  },
+  "merge": {
+    "minGapMs": 800,
+    "maxSentenceMs": 20000,
+    "splitOnPunc": ["。", "？", "！", "…", "!", "?"]
+  },
+  "filter": {
+    "minSegmentMs": 800,
+    "maxSegmentMs": 30000,
+    "minConfidence": 0.6,
+    "dropEmptyText": true,
+    "dropFillersOnly": true
+  },
+  "hotwords": {
+    "version": "20260605",
+    "items": []
+  },
+  "text": {
+    "enableItn": true,
+    "trimWhitespace": true,
+    "removeFillers": ["嗯", "啊", "呃"]
+  },
+  "output": {
+    "segmentIdPrefix": "s",
+    "maxSegments": 500
+  }
+}

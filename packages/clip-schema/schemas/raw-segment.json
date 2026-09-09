@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://clip.local/schemas/raw-segment.json",
+  "title": "RawAsrSegment",
+  "type": "object",
+  "required": ["id", "startMs", "endMs", "text"],
+  "properties": {
+    "id": { "type": "string" },
+    "startMs": { "type": "integer", "minimum": 0 },
+    "endMs": { "type": "integer", "minimum": 0 },
+    "text": { "type": "string" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  },
+  "additionalProperties": false
+}
